@@ -1,14 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '', // ✅ leave empty for Vercel or GitHub Pages auto-path
+  base: './', // ✅ ensures relative asset paths (no absolute URL errors)
   build: {
-    outDir: 'dist', // ensures build goes to dist
-  },
-  server: {
-    open: true,
-  },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
 })
