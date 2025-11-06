@@ -2,8 +2,7 @@
   "info": {
     "_postman_id": "7d9b7f52-87c2-4a0d-9b5b-c2e39d7507e1",
     "name": "EZ Labs Contact Us API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "12345678"
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
@@ -18,7 +17,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test.user@example.com\",\n    \"phone\": \"9876543210\",\n    \"message\": \"This is a test message from Postman.\"\n}"
+          "raw": "{\n    \"name\": \"Harshit\",\n    \"email\": \"moksh9355@gmail.com\",\n    \"phone\": \"9876543210\",\n    \"message\": \"This is a test message from Postman.\"\n}"
         },
         "url": {
           "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
